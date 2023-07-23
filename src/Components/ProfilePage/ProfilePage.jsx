@@ -1,4 +1,6 @@
 import React from 'react';
+import cover from './img/cover.jpg'
+import avatar from './img/avatar.png'
 
 const ProfilePage = () => {
   return (
@@ -8,24 +10,33 @@ const ProfilePage = () => {
         style={{
           width: '100%',
           height: '250px',
-          backgroundColor: '#f0f0f0', // Replace with your cover photo image or color
           position: 'relative',
         }}
       >
-        {/* Rounded Profile Picture */}
-        <div
+        <img 
           style={{
+          width: '100%',
+          height: '250px',
+          objectFit:"cover",
+          borderRadius:"20px"
+          }}
+          src={cover} />
+
+        {/* Rounded Profile Picture */}
+        < img
+            style={{
             width: '200px',
             height: '200px',
             borderRadius: '50%',
-            backgroundColor: '#ccc', // Replace with your profile picture image or color
+            // backgroundColor: '#ccc',
             position: 'absolute',
             bottom: '-50px',
-            left: '20%', // Set to 1/3 of the width to position horizontally to the left of 1/3
+            left: '20%', 
             transform: 'translateX(-50%)',
-            border: '3px solid #fff', // Add a border to the profile picture
+            border: '3px solid #fff',
           }}
-        ></div>
+          src={avatar}
+        />
       </div>
 
       {/* Person Information */}
