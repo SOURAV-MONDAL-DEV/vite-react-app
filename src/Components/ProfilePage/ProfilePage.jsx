@@ -7,7 +7,7 @@ const ProfilePage = () => {
       <div
         style={{
           width: '100%',
-          height: '200px',
+          height: '250px',
           backgroundColor: '#f0f0f0', // Replace with your cover photo image or color
           position: 'relative',
         }}
@@ -15,13 +15,13 @@ const ProfilePage = () => {
         {/* Rounded Profile Picture */}
         <div
           style={{
-            width: '100px',
-            height: '100px',
+            width: '200px',
+            height: '200px',
             borderRadius: '50%',
             backgroundColor: '#ccc', // Replace with your profile picture image or color
             position: 'absolute',
             bottom: '-50px',
-            left: '50%',
+            left: '20%', // Set to 1/3 of the width to position horizontally to the left of 1/3
             transform: 'translateX(-50%)',
             border: '3px solid #fff', // Add a border to the profile picture
           }}
