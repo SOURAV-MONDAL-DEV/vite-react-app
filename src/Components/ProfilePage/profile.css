@@ -1,0 +1,94 @@
+/* profile.css */
+.cover-container {
+    width: 100%;
+    /* height: 250px; */
+    position: relative;
+}
+
+.cover-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: 20%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+}
+
+.person-info-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.person-info-label {
+    width: 150px;
+    text-align: start;
+    font-size: 18px;
+}
+
+.person-info-input {
+    width: 47vw;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+
+/* Media query for small devices (max-width: 768px) */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 3px solid #fff;
+    }
+
+    .cover-image {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .person-info-container {
+        margin-top: 70px;
+        padding: 10px;
+    }
+
+    .person-info-label {
+        width: 120px;
+    }
+
+    .person-info-input {
+        width: 200px;
+        height: 30px;
+
+    }
+}
